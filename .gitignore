@@ -1,0 +1,19 @@
+# Private/customer inputs must stay outside this repository.
+.env
+.env.*
+!.env.example
+private/
+customer-data/
+raw-exports/
+credentials/
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.mobileconfig
+*.log
+__pycache__/
+.DS_Store
+
+# Ignore rules are not a security boundary or a substitute for review.
