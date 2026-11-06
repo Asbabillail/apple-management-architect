@@ -1,0 +1,13 @@
+{
+  "files": 24,
+  "relative_links_checked": 27,
+  "broken_relative_links": [],
+  "evaluation_specs": 15,
+  "model_evaluations_run": 0,
+  "device_tests_run": 0,
+  "customer_marker_scan": "passed; heuristic, not a complete privacy guarantee",
+  "public_repository_created": true,
+  "repository": "https://github.com/Asbabillail/apple-management-architect",
+  "visibility_verified": "public",
+  "remote_content_verification": "See publication verification performed after committing; this file records local package checks."
+}

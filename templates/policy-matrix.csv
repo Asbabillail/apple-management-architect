@@ -1,0 +1,3 @@
+cohort,ownership,enrollment,supervised,device_os,objective,control_surface,proposed_setting,mdm_mapping,source,scope,exceptions,connectivity_dependency,pilot_result,recovery,status
+Example learners,To verify,To verify,To verify,To verify,Approved optional apps,Installation,On-demand approved catalog,Jamf School on-demand,J02,Pilot only,Accessibility and essential apps,Reachable management channel,Not tested,Restore prior scoped assignment,Draft
+Example learners,To verify,To verify,To verify,To verify,Learning-hour focus,App usage,Time-based approved policy,To verify,A06 and J03,Pilot only,After-hours and learning exceptions,Boundary behavior must be tested,Not tested,Restore prior profile scope,Draft
