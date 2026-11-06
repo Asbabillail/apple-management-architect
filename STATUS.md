@@ -8,6 +8,8 @@ Broader audience and scope recorded; initial public documentation, advisory inst
 
 Public repository created on 6 November 2026: [Asbabillail/apple-management-architect](https://github.com/Asbabillail/apple-management-architect). GitHub metadata confirmed public visibility, default branch main and maintainer write access. These files form the initial starter publication.
 
+Publication completed after the maintainer added this repository to the GitHub app's selected access. The initial complete source commit is [e346eee740133fd152ae99ed7199a48ce79db591](https://github.com/Asbabillail/apple-management-architect/commit/e346eee740133fd152ae99ed7199a48ce79db591). All 24 files were read back at that commit and matched the prepared source by both full text and Git blob hash. The recursive tree contained exactly 24 files, was not truncated, and main pointed to that commit at verification time. This checkpoint records that result; it does not promote advisory evaluations or device tests to passed.
+
 ## Not completed
 
 Independent review of the expanded public knowledge and all fifteen actual advisory evaluations remain pending. Repository source consistency checks do not establish model quality or device compatibility. No numbered GitHub release or installable public plugin is claimed.
