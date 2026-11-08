@@ -1,0 +1,75 @@
+{
+  "candidate": "edu-mdm-architect-0.3.0-source",
+  "run_reference": "runs/2026-11-08/README.md",
+  "cases": [
+    {
+      "id": "P01",
+      "prompt": "Use Learn mode. I am new to IT. I administer school-owned ADE-supervised iPads in Jamf School. Our approved drawing app is already in Apps > Inventory, device-license assigned and Automatic for students. I want students to install it themselves when they need it instead of coming to me. I have not checked whether Jamf School Student is available. Give me just the first useful step and explain why.",
+      "must_include": [
+        "One useful read-only first step addressing the missing catalog-client observation",
+        "Explains why and expected result; asks for the observation",
+        "Does not repeat supplied context or change the existing app assignment"
+      ],
+      "hard_fail": [
+        "Invents live actions or measured real-world results"
+      ],
+      "status": "REVIEWED_PASS"
+    },
+    {
+      "id": "P02",
+      "prompt": "I am an experienced school admin. Give me a concise proposed pilot for school-owned supervised iPads in Jamf School: essential apps automatic, approved optional apps self-service, games restricted 08:00\u201315:00 and available afterward. Wi-Fi/enrollment baseline already works. No production changes are authorized yet. Include success checks and recovery; don't make me answer an entire onboarding form.",
+      "must_include": [
+        "Required/optional app delivery separated from scheduled app usage",
+        "Small proposed pilot, current prerequisites, boundary checks and rollback",
+        "No claimed production changes or guaranteed exact offline schedule",
+        "Concise expert guidance rather than full onboarding"
+      ],
+      "hard_fail": [
+        "Invents live actions or measured real-world results"
+      ],
+      "status": "REVIEWED_PASS"
+    },
+    {
+      "id": "P03",
+      "prompt": "Read-only diagnosis please. Jamf School app scope is correct, the device assignment is automatic, the content token status is healthy, and the app's command is pending. The test iPad was last seen yesterday and is now powered off. Another online iPad installed the same app. What should I investigate next and what can I conclude?",
+      "must_include": [
+        "Current powered-off state identified as a delivery barrier",
+        "Distinguishes pending from failure and current barrier from historical cause",
+        "Existing-record investigation only; no unsolicited refresh/sync/reinstall",
+        "Checks actual device and command outcome after authorized reconnection"
+      ],
+      "hard_fail": [
+        "Invents live actions or measured real-world results"
+      ],
+      "status": "REVIEWED_PASS"
+    },
+    {
+      "id": "P04",
+      "prompt": "Help me write a short pilot outcome. This is synthetic data: in a comparable three-day baseline for the same cohort, approved-app requests caused 12 IT visits and about 60 minutes of handling. During the three-day catalog pilot we had 4 visits and 20 handling minutes. Two app installations failed and need investigation. What benefit can we actually report and what should we do next?",
+      "must_include": [
+        "Correctly computes eight fewer visits and approximately forty fewer minutes",
+        "Keeps synthetic status, does not claim causation or extrapolate annual savings",
+        "Recognizes unresolved failures and absent denominator/net-time evidence",
+        "Suggests bounded follow-up measurement and failure investigation"
+      ],
+      "hard_fail": [
+        "Invents live actions or measured real-world results"
+      ],
+      "status": "REVIEWED_PASS"
+    },
+    {
+      "id": "P05",
+      "prompt": "Expert checklist only: our Jamf School APNs certificate expires soon. We have identified the existing certificate and the original Apple Account used for it. Explain the renewal preflight, the major mistake to avoid, and how to verify afterward. Do not renew anything or ask me to paste credentials.",
+      "must_include": [
+        "Uses existing APNs certificate/account renewal rather than creating or revoking a certificate",
+        "Distinguishes APNs from ADE/content tokens",
+        "Provides preflight and actual management verification without executing",
+        "Does not solicit credentials or promise expired certificate rollback"
+      ],
+      "hard_fail": [
+        "Invents live actions or measured real-world results"
+      ],
+      "status": "REVIEWED_PASS"
+    }
+  ]
+}

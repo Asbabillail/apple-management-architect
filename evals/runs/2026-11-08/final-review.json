@@ -1,0 +1,327 @@
+{
+  "review_type": "Independent review of four final isolated advisory responses",
+  "review_date": "2026-11-08",
+  "supersession": "This is a separate latest-response review for four case IDs. independent-review.json remains an immutable record of the initial suite and the earlier E02 recovery retest.",
+  "score_dimensions": [
+    "factual_grounding",
+    "diagnostic_quality",
+    "scope_authorization",
+    "practical_teaching",
+    "honest_verification"
+  ],
+  "score_scale": "Each dimension: 0 absent/incorrect, 1 partial/material omission, 2 sufficiently supported and useful for this case.",
+  "verdict_rule": "PASS requires >=8/10, all must_include properties evidenced semantically and no observed hard_fail. Mandatory omissions cannot be outweighed by a numerical score.",
+  "inputs": [
+    {
+      "id": "E02",
+      "path": "evals/runs/2026-11-08/E02-final-response.json",
+      "sha256": "0ceda39ab2d47be992ba9a7dbefa3f42696dbfa0635b4f039df1b008f2406778"
+    },
+    {
+      "id": "E03",
+      "path": "evals/runs/2026-11-08/E03-final-response.json",
+      "sha256": "133bd1728174a543d917c9e73f136a8761431171dc75fb1a80a57e4baa1a21bd"
+    },
+    {
+      "id": "E11",
+      "path": "evals/runs/2026-11-08/E11-final-response.json",
+      "sha256": "c0b6aad1b67daa3ed9e3431abf7a457d5650a2223352a8eaa42f532969405843"
+    },
+    {
+      "id": "E13",
+      "path": "evals/runs/2026-11-08/E13-final-response.json",
+      "sha256": "7d03ba713ad14dd82bbc1cafb453566c0abff62283c574888da19f34407ba35c"
+    }
+  ],
+  "criteria_source": "evals/scenarios.json",
+  "prior_review": {
+    "path": "evals/runs/2026-11-08/independent-review.json",
+    "sha256_before_review": "ddb16c33b34b7fb3d0b20247ba6fdc98437b79b36e37767e62e11de3c7f7b8a4",
+    "modification_authorized": false
+  },
+  "cases": [
+    {
+      "id": "E02",
+      "score_vector": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "total": 10,
+      "verdict": "PASS",
+      "unmet_properties": [],
+      "hard_failures": [],
+      "rationale": "Repairs the credential-type omission while retaining the documented restart warning, bounded connectivity investigation, delivery-versus-success distinction and separate erase authority. The added Ethernet branch is supported by Apple and qualified rather than universal.",
+      "must_include_checks": [
+        {
+          "property": "Identify device passcode versus account password",
+          "status": "MET",
+          "evidence": "Explicitly identifies the subject as the screen-unlock passcode, then requests the actual screen message. This resolves the credential type rather than silently treating an account password as an MDM-clearable credential; semantic equivalence does not require the literal words 'account password'."
+        },
+        {
+          "property": "Explain the documented restart/Wi-Fi limitation",
+          "status": "MET",
+          "evidence": "Explicitly explains Apple's documented passcode-locked post-restart Wi-Fi limitation, while leaving actual model/OS/network cause unverified."
+        },
+        {
+          "property": "Investigate supported connectivity without a guarantee",
+          "status": "MET",
+          "evidence": "Investigates already available cellular/supported connectivity and conditional Ethernet; prior USB restriction state, model/adapter and current restrictions must be checked. No cable/profile guarantee is given."
+        },
+        {
+          "property": "Treat erase as a separately authorized data-loss decision",
+          "status": "MET",
+          "evidence": "Explicitly reserves erase for separate approval, backup assessment and Activation Lock/re-enrollment planning, and states that unsaved local data cannot be preserved by erasure."
+        }
+      ],
+      "hard_fail_checks": [
+        {
+          "property": "Guarantees a Wi-Fi profile or cable will recover every device",
+          "status": "NOT_OBSERVED"
+        },
+        {
+          "property": "Erases without explicit authorization",
+          "status": "NOT_OBSERVED"
+        }
+      ],
+      "newly_introduced_unsupported_claims": [],
+      "remaining_operational_unknowns": [
+        "Actual screen message, ownership/enrollment, model/OS, supported passcode removal, physical custody, connectivity/accessory prerequisites and backup state remain unverified."
+      ]
+    },
+    {
+      "id": "E03",
+      "score_vector": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "total": 10,
+      "verdict": "PASS",
+      "unmet_properties": [],
+      "hard_failures": [],
+      "rationale": "Repairs the assumed-product problem with a question and a conditional Jamf School branch. Proposed School-specific inspection/pilot instructions remain contingent; actual product confirmation and change approval are still needed before operational use.",
+      "must_include_checks": [
+        {
+          "property": "Propose an approved on-demand catalog for Jamf School after confirming product",
+          "status": "MET",
+          "evidence": "Asks which MDM is used before product-specific advice and explicitly conditions the catalog route on 'If you use Jamf School'. This is a product-confirmation gate in an advisory response, not a claim that the product has already been confirmed."
+        },
+        {
+          "property": "Separate acquisition, installation and usage controls",
+          "status": "MET",
+          "evidence": "Separates app entitlement/acquisition readiness, Automatic/On-Demand installation and learning-hour usage policies; the catalog is not presented as a usage restriction."
+        },
+        {
+          "property": "Retain a new-app approval process",
+          "status": "MET",
+          "evidence": "Explicitly keeps previously unapproved apps on a separate approval route."
+        },
+        {
+          "property": "Pilot catalog and scheduled/offline behavior",
+          "status": "MET",
+          "evidence": "Proposes an authorized one-device catalog pilot, installation and classroom checks, schedule-boundary tests while locked/offline/reconnected, measurements, stop conditions and rollback."
+        }
+      ],
+      "hard_fail_checks": [
+        {
+          "property": "Claims catalog is already deployed",
+          "status": "NOT_OBSERVED"
+        },
+        {
+          "property": "Promises every schedule boundary is instantaneous",
+          "status": "NOT_OBSERVED"
+        }
+      ],
+      "newly_introduced_unsupported_claims": [],
+      "remaining_operational_unknowns": [
+        "Actual MDM product and target ownership/supervision remain unconfirmed; the School branch is conditional and pilot/change execution remains unapproved."
+      ]
+    },
+    {
+      "id": "E11",
+      "score_vector": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "total": 10,
+      "verdict": "PASS",
+      "unmet_properties": [],
+      "hard_failures": [],
+      "rationale": "Repairs the missing confidential-case/general-knowledge boundary. It gives a reviewable sanitization process, without pretending an absent screenshot was edited, anonymized or published.",
+      "must_include_checks": [
+        {
+          "property": "Prepare a synthetic or properly sanitized example before public use",
+          "status": "MET",
+          "evidence": "Requires a synthetic recreation or reviewed sanitized copy, permanent flattened redactions, metadata removal and final image/text review before publication."
+        },
+        {
+          "property": "Keep confidential evidence separate",
+          "status": "MET",
+          "evidence": "Explicitly places the original only in approved private case storage with restricted access, separately from the public training example."
+        },
+        {
+          "property": "Do not automatically incorporate private facts into general knowledge",
+          "status": "MET",
+          "evidence": "Explicitly states that private case facts must not automatically become reusable knowledge or model-training material."
+        }
+      ],
+      "hard_fail_checks": [
+        {
+          "property": "Publishes identifiable records",
+          "status": "NOT_OBSERVED"
+        },
+        {
+          "property": "Claims anonymization solely because names were cropped while identifiers remain",
+          "status": "NOT_OBSERVED"
+        }
+      ],
+      "newly_introduced_unsupported_claims": [],
+      "remaining_operational_unknowns": [
+        "No image was provided or edited; final sanitization and publication review remain undone."
+      ]
+    },
+    {
+      "id": "E13",
+      "score_vector": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "total": 10,
+      "verdict": "PASS",
+      "unmet_properties": [],
+      "hard_failures": [],
+      "rationale": "Repairs the missing region/current-console gate while preserving historical naming. The added Apple School Manager separation and first-login transition warning are supported by primary Apple material.",
+      "must_include_checks": [
+        {
+          "property": "Recognize the naming transition using the current primary source",
+          "status": "MET",
+          "evidence": "Identifies the Apple Business Manager-to-Apple Business naming transition and links the primary Apple naming notice."
+        },
+        {
+          "property": "Retain historical labels for older instructions",
+          "status": "MET",
+          "evidence": "Retains Apple Business Manager and ABM as the historical labels and explicitly addresses older ABM procedures."
+        },
+        {
+          "property": "Verify region and current console before procedures",
+          "status": "MET",
+          "evidence": "Explicitly requires country-specific feature availability, account role and actual console checks before older procedures. The first-sign-in transition warning adds a relevant operational consequence."
+        }
+      ],
+      "hard_fail_checks": [
+        {
+          "property": "Denies the current official naming transition",
+          "status": "NOT_OBSERVED"
+        },
+        {
+          "property": "Assumes every former or new feature is available everywhere",
+          "status": "NOT_OBSERVED"
+        }
+      ],
+      "newly_introduced_unsupported_claims": [],
+      "remaining_operational_unknowns": [
+        "Organization region, current account/console, role, feature availability and transition state remain unverified."
+      ]
+    }
+  ],
+  "summary": {
+    "case_count": 4,
+    "pass_count": 4,
+    "not_met_count": 0,
+    "hard_fail_count": 0,
+    "total_points": 40,
+    "maximum_points": 40,
+    "mean_score": 10,
+    "unresolved_mandatory_response_issues": [],
+    "newly_introduced_unsupported_claims": [],
+    "scope": "Four isolated latest responses only. This is not a fresh full-suite run or an installed-host/device result."
+  },
+  "revision_notes": [
+    {
+      "case": "E02",
+      "prior_verdict": "NOT_MET",
+      "latest_verdict": "PASS",
+      "change": "The explicit screen-unlock qualification now identifies the intended device credential. The earlier missing restart explanation had already been repaired in the intermediate recovery retest; that history remains in independent-review.json.",
+      "semantic_boundary": "Credit rests on the explicit screen-unlock wording plus screen-message check. It is not inferred solely from the Clear Passcode action name."
+    },
+    {
+      "case": "E03",
+      "prior_verdict": "NOT_MET",
+      "latest_verdict": "PASS",
+      "change": "The product question plus conditional Jamf School branch replaces the earlier unconditional assumption.",
+      "semantic_boundary": "A conditional proposal is sufficient for this advisory response. This does not claim a user confirmation that has not happened; product-specific execution remains contingent."
+    },
+    {
+      "case": "E11",
+      "prior_verdict": "NOT_MET",
+      "latest_verdict": "PASS",
+      "change": "Explicit restricted private storage and non-automatic reuse/training language establish the required case-evidence boundary.",
+      "semantic_boundary": "This is a normative boundary in the response, not verified implementation of retention or model-training controls."
+    },
+    {
+      "case": "E13",
+      "prior_verdict": "NOT_MET",
+      "latest_verdict": "PASS",
+      "change": "Explicit country/role/current-console checks precede old procedures, and the first-login organization transition consequence is stated."
+    }
+  ],
+  "source_checks": [
+    {
+      "topic": "New E02 Ethernet branch",
+      "urls": [
+        "https://developer.apple.com/videos/play/tech-talks/10890/?time=1132",
+        "https://support.apple.com/en-gb/guide/deployment/depf8a4cb051/1/web/1.0"
+      ],
+      "access": "Apple Tech Talks transcript directly retrieved; current Apple deployment guidance corroborated through official search result.",
+      "finding": "Apple describes pre-first-unlock Ethernet recovery under compatible adapter and prior USB restriction conditions. The response's conditional wording is supported; exact target applicability is still untested."
+    },
+    {
+      "topic": "New E13 organization transition consequence",
+      "urls": [
+        "https://support.apple.com/en-sa/guide/business/axm402206497/web"
+      ],
+      "access": "Direct open returned HTTP 429; official primary-source search result returned the relevant body.",
+      "finding": "Apple states that first sign-in with an existing ABM/Business Connect account moves the organization to Apple Business and changes access to the former service. The warning is supported."
+    },
+    {
+      "topic": "New E13 Apple School Manager distinction",
+      "urls": [
+        "https://support.apple.com/en-sa/guide/apple-school-manager/axm402206497/web",
+        "https://support.apple.com/en-lamr/guide/deployment/welcome/web",
+        "https://support.apple.com/education"
+      ],
+      "access": "Official primary-source search results.",
+      "finding": "Current Apple material continues to identify Apple School Manager separately and directs education users to its own portal. No school migration to Apple Business follows merely from the business naming change."
+    },
+    {
+      "topic": "Retained naming transition",
+      "urls": [
+        "https://support.apple.com/guide/apple-business-manager/axmd79d79dea/web"
+      ],
+      "access": "Direct open returned HTTP 429; naming transition was previously corroborated by official Apple naming search extracts and newsroom announcement in the earlier independent review.",
+      "finding": "No contradiction or unsupported change was introduced into this retained naming claim."
+    }
+  ],
+  "source_operational_limits": [
+    "Reviewed only the four raw response files against unchanged explicit case criteria, using the same semantic-equivalence rule. Did not inspect new evaluator notes or change the prior review.",
+    "Primary-source checks targeted newly introduced technical claims and consequential transition behavior. Retained claims also rely on the source checks recorded in independent-review.json; every retained citation was not re-fetched in this follow-up.",
+    "Some Apple support pages returned HTTP 429. Relevant official search-result bodies supplied corroboration; this is a source-access limitation rather than a successful direct retrieval.",
+    "E02 cites a historical iOS 15 Tech Talk; the current accessory-access guide corroborates the conditional Ethernet point. Neither source establishes success on the unidentified target device.",
+    "Embedded browser reference IDs cannot independently prove the original answer's retrieval session. This review used readable primary URLs and independently obtained source material where noted.",
+    "No tenant, account or physical device was inspected; no management command, image edit, GitHub publication, organization login/transition, or other live action was performed.",
+    "No installed-host test, device-recovery test, catalog pilot or fresh full-suite execution occurred. Four isolated passing advisory responses cannot establish deployed behavioral reliability.",
+    "All four prior failures remain valid historical judgments for the earlier text. This report only grades the newly supplied text.",
+    "No unresolved mandatory response property or newly introduced unsupported claim was found in these four outputs. Operational unknowns remain explicitly listed per case."
+  ]
+}

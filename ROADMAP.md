@@ -6,15 +6,17 @@
 - [x] Define natural-language Learn, Assist and future Operate modes.
 - [x] Draft three priority playbooks and a dated primary source register.
 - [x] Define private/public separation and contribution rules.
-- [x] Specify fifteen advisory evaluations, all NOT_RUN.
+- [x] Specify fifteen original advisory evaluation specifications.
 - [x] Create the public GitHub repository and verify public visibility/write access.
-- [ ] Independently review the initial public content and run advisory evaluations.
-- [ ] Run actual fresh-context advisory evaluations and fix failures.
+- [x] Collect actual initial-source advisory responses and separate-context review.
+- [x] Add five practical tasks, fix mandatory omissions and run four isolated retests.
+- [ ] Verify installed-host skill routing and run a complete isolated suite on one final snapshot.
 
 ## Stage 1 — iPad operational knowledge
 
 - [ ] Map model/OS/enrollment applicability, including Wi-Fi versus cellular and supervised versus User Enrollment.
-- [ ] Build enrollment, APNs/ADE/content-token, app delivery, identity, profile-conflict and update modules.
+- [x] Publish existing general advisory modules and practical app self-service guidance.
+- [ ] Complete per-version applicability and independently validate broader modules.
 - [ ] Validate approved self-service and timed restrictions in an authorized pilot.
 - [ ] Validate locked/restarted/offline recovery paths without promising universal recovery.
 - [ ] Complete public ASM and Apple Business modules with current regional distinctions.

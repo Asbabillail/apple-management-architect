@@ -1,0 +1,2 @@
+device_ref_pseudonym,ownership,asm_source,asm_mdm_server,asm_assignment_status,jamf_presence,enrollment_type,supervised,os_version,last_checkin_utc,assigned_cohort,exception_type,confidence,action_owner,validation_status
+example-device-001,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unclassified,Unknown,Unassigned,Not checked

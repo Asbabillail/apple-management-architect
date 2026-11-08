@@ -1,0 +1,2 @@
+id,finding,evidence_status,impact,likelihood,confidence,severity,affected_scope,owner,mitigation,source,last_reviewed,validation,rollback,status
+R-001,Example Wi-Fi restrictions deployed before verified profile,Illustrative,High,Medium,Low,Informational,Unknown,IT lead,Verify managed Wi-Fi first,Official Jamf School restrictions docs,2026-10-26,Not tested,Restore previous restriction scope,Example only

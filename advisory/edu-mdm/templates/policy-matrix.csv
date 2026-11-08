@@ -1,0 +1,9 @@
+cohort,ownership,enrollment,supervised,baseline_wifi,managed_apps,account_changes,passcode_policy,erase_management_controls,accessibility_exceptions,source_os_dependency,pilot_status,approval,rollback
+Early grades,School-owned,ADE,Verify,Proposed managed Wi-Fi,Age-appropriate,Review,Review,Verify support,Teacher accommodations,Verify,Not tested,Pending,Retain existing profile
+Primary grades,School-owned,ADE,Verify,Proposed managed Wi-Fi,Age-appropriate,Review,Review,Verify support,Teacher accommodations,Verify,Not tested,Pending,Retain existing profile
+Middle grades,School-owned,ADE,Verify,Proposed managed Wi-Fi,Curriculum driven,Review,Review,Verify support,Accessible options,Verify,Not tested,Pending,Retain existing profile
+Grades 9-12,School-owned,ADE,Verify,Proposed managed Wi-Fi,Curriculum driven,Review,Review,Verify support,Accessible options,Verify,Not tested,Pending,Retain existing profile
+Teachers,School-owned,ADE,Verify,Proposed managed Wi-Fi,Instructional tools,Flexible with safeguards,Review,Verify support,Accessibility accommodations,Verify,Not tested,Pending,Retain existing profile
+Administration,School-owned,ADE,Verify,Proposed managed Wi-Fi,Administrative apps,Review,Review,Verify support,Privacy controls,Verify,Not tested,Pending,Retain existing profile
+IT administrators,School-owned,ADE,Verify,Proposed managed Wi-Fi,Approved admin tools,Role based,Review,Verify support,Admin recovery,Verify,Not tested,Pending,Retain existing profile
+BYOD participants,Personally owned,Verify,Verify,Minimal approved config,Consent-based,Limit scope,Review,Ownership sensitive,Privacy first,Verify,Not tested,Consent required,Owner approved removal

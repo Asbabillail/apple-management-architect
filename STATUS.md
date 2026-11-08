@@ -1,21 +1,19 @@
 # Resume checkpoint
 
-Date: 6 November 2026. Package: documentation preview 0.1.0.
+Date: 8 November 2026. Practical advisory source: v0.3.0.
 
 ## Completed
 
-Broader audience and scope recorded; initial public documentation, advisory instructions, three playbooks, source register, MDM discovery list, contribution templates and fifteen evaluation specifications prepared. The package contains original generic content, not a copied private notebook or plugin source export.
+Existing private EDU-MDM Architect updated to v0.3.0, preserving identity and audience. Release reference: pluginrel_6af097ebc4a48191aec465b36ff7cb4f. All 37 text files matched the candidate on saved-source readback; thirteen skills and the retained icon form the release. General skills, references and templates are published under [advisory/edu-mdm](advisory/edu-mdm/README.md), excluding private presentation/contact metadata.
 
-Public repository created on 6 November 2026: [Asbabillail/apple-management-architect](https://github.com/Asbabillail/apple-management-architect). GitHub metadata confirmed public visibility, default branch main and maintainer write access. These files form the initial starter publication.
+Twenty distinct requests produced 25 response texts. A separate assistant-context review found four mandatory omissions; four isolated retests passed after corrections. Sixteen earlier passing responses were retained. The full suite was not rerun on the final snapshot. See [actual responses, judgments and limits](evals/runs/2026-11-08/README.md).
 
-Publication completed after the maintainer added this repository to the GitHub app's selected access. The initial complete source commit is [e346eee740133fd152ae99ed7199a48ce79db591](https://github.com/Asbabillail/apple-management-architect/commit/e346eee740133fd152ae99ed7199a48ce79db591). All 24 files were read back at that commit and matched the prepared source by both full text and Git blob hash. The recursive tree contained exactly 24 files, was not truncated, and main pointed to that commit at verification time. This checkpoint records that result; it does not promote advisory evaluations or device tests to passed.
+The public foundation was originally published on 6 November 2026. Earlier preview and private evaluation records are historical checkpoints, not current evidence for broader platform mastery.
 
 ## Not completed
 
-Independent review of the expanded public knowledge and all fifteen actual advisory evaluations remain pending. Repository source consistency checks do not establish model quality or device compatibility. No numbered GitHub release or installable public plugin is claimed.
-
-No live MDM integration, model benchmark, hardware test, policy deployment, device command, migration or AppleCare case submission was performed. The installed private EDU-MDM Architect plugin has not been changed by this package.
+No installed-host routing check, live MDM integration, hardware test, policy deployment, device command, migration or AppleCare case submission was performed. No measured real support-time saving is established. Wider Apple Business, AppleCare-family, other-MDM and Mac coverage is incomplete. No public installable plugin or autonomous execution is claimed.
 
 ## Next
 
-Inspect the latest remote commit before editing; never overwrite unrelated work. Run the fifteen actual advisory evaluations, complete product/OS applicability and plan a separate authorized pilot. The first product implementation remains Jamf School while foundations remain vendor-neutral. No customer-specific material belongs in public GitHub.
+Run a separately authorized small approved-app catalog pilot, including failure handling and comparable workload measurements. Validate recovery and timed restrictions separately. Expand integrations after a repeatable workflow works. Keep private organization evidence separate. Inspect the current remote head before editing; preserve unrelated work.

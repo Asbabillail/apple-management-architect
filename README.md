@@ -2,7 +2,7 @@
 
 Evidence-backed Apple administration guidance for schools, universities and businesses. Explain the task in ordinary language; get a practical plan, learn while doing it, and build toward carefully authorized automation.
 
-**Status: documentation preview 0.1.0 — 6 November 2026.** This repository contains reference notes, agent instructions, playbook drafts and evaluation specifications. It contains no operational MDM integration and cannot dispatch device commands. The existing private EDU-MDM Architect plugin remains a separate release; creating this project does not update or publish it.
+**Status: practical advisory source v0.3.0 — 8 November 2026.** The existing private EDU-MDM Architect plugin was updated separately to v0.3.0 and its 37 text files matched the reviewed candidate on readback. This repository publishes its general [instructional source](advisory/edu-mdm/README.md) and [actual response evidence](evals/runs/2026-11-08/README.md). It contains no operational MDM integration and cannot dispatch device commands. Wider platform coverage remains unfinished. See [release scope](docs/practical-release.md).
 
 ## Start here
 

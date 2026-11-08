@@ -1,0 +1,14 @@
+# Phased Jamf School policy migration checklist
+- [ ] Identify approved operator/change window and segregate school-owned vs BYOD
+- [ ] Export/version current profile, Blueprint and group inventory
+- [ ] Record baseline device check-in, supervision, iPadOS and user/accessibility needs
+- [ ] Prove working managed Wi-Fi and recovery path **before** network restrictions
+- [ ] Verify official Apple/Jamf School support and OS prerequisites for each payload
+- [ ] Define pilot groups, owner, communications and helpdesk fallback
+- [ ] Deploy smallest scoped pilot; check app, identity, classroom tasks and accessibility
+- [ ] Reboot/lock test and capture connectivity / command delivery failures
+- [ ] Compare observed outcome to acceptance criteria; review privacy/BYOD
+- [ ] Get named approval before expansion; progressively stage device cohorts
+- [ ] Monitor drift and incident counts; document exceptions
+- [ ] Retain known-good policy version; document rollback / closure
+- [ ] Do not remove old profile until replacement verified and approved

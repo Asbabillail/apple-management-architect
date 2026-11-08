@@ -1,13 +1,16 @@
 {
-  "files": 24,
-  "relative_links_checked": 27,
+  "review_date": "2026-11-08",
+  "files": 62,
+  "relative_links_checked": 50,
   "broken_relative_links": [],
-  "evaluation_specs": 15,
-  "model_evaluations_run": 0,
+  "distinct_advisory_prompts": 20,
+  "actual_response_texts": 25,
+  "latest_response_review": "16 retained passes plus 4 isolated passing retests; no full final-snapshot rerun",
+  "saved_plugin_text_files_verified": 37,
   "device_tests_run": 0,
-  "customer_marker_scan": "passed; heuristic, not a complete privacy guarantee",
+  "installed_host_routing_tests_run": 0,
+  "real_workload_saving_measured": false,
   "public_repository_created": true,
   "repository": "https://github.com/Asbabillail/apple-management-architect",
-  "visibility_verified": "public",
-  "remote_content_verification": "See publication verification performed after committing; this file records local package checks."
+  "scope": "Local source/JSON/link consistency; remote tree verification performed separately after publication"
 }
